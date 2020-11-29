@@ -6,11 +6,12 @@
 </head>
 <body>
 <h3 style="margin: 10px 50px auto;">Vice Versa</h3>
-<form action="home.html" method="post">
-    <textarea cols="50" rows="10" name="user text" style="margin: 10px 25px auto;">
+<!--<form action="reverse"> один из способов отправки на страницу-->
+<form action="{% url 'reverse' %}"> <!--один из способов отправки на страницу-->
+    <textarea cols="50" rows="10" name="usertext" style="margin: 10px 25px auto;">
 
     </textarea>
-    <p><button style="margin: 10px 25px auto;" type="submit">Revers!</button></p>
+    <p><input style="margin: 10px 25px auto;" type="submit" value="Reverse!"></p>
 </form>
 
 </body>
